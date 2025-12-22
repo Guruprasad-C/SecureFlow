@@ -33,7 +33,9 @@ class _NewExpenseState extends State<NewExpense> {
       firstDate: firstDate,
       lastDate: now,
     );
-    _selectedDate = pickedDate;
+    setState(() {
+      _selectedDate = pickedDate;
+    });
   }
 
   void _submitExpenseData() {
